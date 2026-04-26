@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="acQRue1t9Kb4aJ4EGVgB" name="Page-1">
+    <mxGraphModel dx="1397" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iot" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="IoT Environment" vertex="1">
+          <mxGeometry height="60" width="150" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="state" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Network State" vertex="1">
+          <mxGeometry height="60" width="150" x="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="agent" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="DRL Agent" vertex="1">
+          <mxGeometry height="80" width="120" x="450" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="action" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Action" vertex="1">
+          <mxGeometry height="60" width="120" x="650" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mitigation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=black;fillColor=none;" value="Attack Detection &amp; Mitigation" vertex="1">
+          <mxGeometry height="70" width="180" x="450" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="iot" style="endArrow=classic;strokeColor=black;" target="state">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="state" style="endArrow=classic;strokeColor=black;" target="agent">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="agent" style="endArrow=classic;strokeColor=black;" target="action">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="action" style="endArrow=classic;strokeColor=black;exitX=0.397;exitY=1.022;exitDx=0;exitDy=0;exitPerimeter=0;" target="mitigation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="697.2358490566039" y="80" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="mitigation" style="endArrow=classic;dashed=1;strokeColor=black;entryX=0.575;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;endFill=1;" target="agent" value="Reward / Feedback">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525.0746922643834" y="179.37385417589576" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
